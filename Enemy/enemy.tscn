@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqajgtknbbs6v"]
+
+[ext_resource type="Script" path="res://Enemy/Enemy.gd" id="1_imu7i"]
+[ext_resource type="Texture2D" uid="uid://cd1sqokpduu8j" path="res://Assets/kenney_simple-space/PNG/Default/station_A.png" id="2_jo2ku"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qvv6j"]
+radius = 35.0
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_imu7i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_jo2ku")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-8, -26.8, -8, -24.8, -4, -20.8, -4, -15, 4, -15, 4, -20.8, 11.2, -28, 20.7, -28, 26, -24, 26, -21.4, 28.5, -10, 25.9, -10, 20.9, -4, 15, -4, 15, 4, 20.8, 4, 28, 11.2, 28, 22, 25.9, 22, 20.9, 28, 10, 28, 10, 25.9, 4, 20.9, 4, 15, -4, 15, -4, 20.8, -11.2, 28, -20.7, 28, -27, 23, -27, 19.9, -25.8, 7, -23.8, 7, -20.8, 4, -15, 4, -15, -4, -20.8, -4, -28, -11.2, -28, -20.9, -22, -25.9, -22, -28.2)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_qvv6j")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
