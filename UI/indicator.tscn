@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2aq7n0afchon"]
+
+[ext_resource type="Texture2D" uid="uid://ccgn446y04jv" path="res://Assets/kenney_simple-space/PNG/Default/ship_sidesC.png" id="1_l5sle"]
+
+[node name="Indicator" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_l5sle")
