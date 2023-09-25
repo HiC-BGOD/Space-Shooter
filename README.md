@@ -8,7 +8,8 @@ Description
 ## What Makes this a Game?
 
 ## References
-
+https://www.dafont.com/hyperspace.font
+https://kenney.nl/assets/simple-space
 ## Future Development
 
 ## Created by
