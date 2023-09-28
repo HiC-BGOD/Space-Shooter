@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://c2oxqs8pjr1nv"]
+[gd_scene load_steps=9 format=3 uid="uid://c2oxqs8pjr1nv"]
 
 [ext_resource type="PackedScene" uid="uid://dmpetf6kkhw4t" path="res://Player/player.tscn" id="1_v1jte"]
 [ext_resource type="Script" path="res://Player/Player_Container.gd" id="2_8s0ov"]
@@ -7,8 +7,16 @@
 [ext_resource type="Script" path="res://UI/HUD.gd" id="5_ww31r"]
 [ext_resource type="FontFile" uid="uid://bbfac5kbqepqe" path="res://Assets/hyperspace/Hyperspace Bold.otf" id="6_j8pcl"]
 [ext_resource type="Script" path="res://UI/Menu.gd" id="7_3hevq"]
+[ext_resource type="Texture2D" uid="uid://biiy2rr1eyl52" path="res://Assets/3d-illustration-abstract-galaxy-background-with-planets-stars-nebula_956880-353.jpg" id="8_853qh"]
 
 [node name="Game" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = -441.0
+offset_top = -181.0
+offset_right = 1559.0
+offset_bottom = 942.0
+texture = ExtResource("8_853qh")
 
 [node name="Asteriod_container" type="Node2D" parent="."]
 
