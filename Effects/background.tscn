@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://2weqj5jrljh3"]
+
+[ext_resource type="Texture2D" uid="uid://biiy2rr1eyl52" path="res://Assets/3d-illustration-abstract-galaxy-background-with-planets-stars-nebula_956880-353.jpg" id="1_fcauv"]
+
+[node name="Background" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -357.0
+offset_top = -194.0
+offset_right = 1643.0
+offset_bottom = 929.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fcauv")
